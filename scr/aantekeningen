@@ -1,0 +1,45 @@
+
+next step --> uitzoeken wat private en public en static staat in edhub en daarop door gaan en kijken waar ik de arraylist moet vullen.
+ Het aantal taarten kunnen ingeven.
+ - vragen om taarten
+ - applePieRicepe aanmaken
+    - variabelen
+        -private name --> applePie + hoeveelheid taarten
+        -private aantal taarten
+        -Static Arraylist Ingredienten --> alle ingredienten voor hoeveelheid
+        -Static Bashlist stappen van alle stappen
+    -constructur parameter aantal recepten
+            -this.aantal taarten = aantal taarten
+            - this.name = applepie + aantal
+            - this.arraylist.add ingredienten
+            - this.bashlist.add stappen
+
+    -methods
+        - uitprinten lijst met ingredienten --> for each loop
+        - uitprinten lijst met stappen -->
+            -stap voor stap
+            -alles in een keer for each loop
+
+
+- Ingredients
+    -variabelen
+        -private name
+        -private hoeveelheid
+        -private eenheid
+        -private boolean vegan
+    -consturctor(name,hoeveelheid, eenheid, vegan)
+    alles toewijzen
+    -methods
+    getters
+
+
+
+
+
+ -
+
+
+ Een boodschappen lijst uitprinten met hoeveelheden erbij --> met arraylist
+
+ Punt voor punt de stappen uitprinten met vragen of iemand het snapt --> Bashlist
+
