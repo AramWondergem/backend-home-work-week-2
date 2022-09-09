@@ -37,10 +37,13 @@ next step --> uitzoeken wat private en public en static staat in edhub en daarop
 
 
 
- -
+
 
 
  Een boodschappen lijst uitprinten met hoeveelheden erbij --> met arraylist
 
  Punt voor punt de stappen uitprinten met vragen of iemand het snapt --> Bashlist
 
+misschien decimalformat toevoegen voor het aantal pies
+
+het uitprinten van de boodschappenlijst en van het recept
