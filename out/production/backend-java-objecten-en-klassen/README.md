@@ -54,11 +54,11 @@ Nou kunnen we dit alles natuurlijk in de main met een System.out.println zetten 
 ## Randvoorwaarden
 De opdracht moet voldoen aan de volgende voorwaarden:
 
-- minimaal 3 klassen genaamd: `Ingredient`, `ApplePieRecipe` en `Main`
+- minimaal 3 klassen genaamd: `Ingredient`, `ApplePieRecipe` en `scr.Main`
 - minimaal 3 variabelen, 2 constructors en getters en setters in `Ingredient`
 - minimaal voor elk ingredient dat hierboven genoemd is een object geinstanieerd in `ApplePieRecipe`
 - minimaal voor elke stap die hierboven genoemd word een methode die de tekst via een `System.out.println()` uitprint
-- minimaal 1 object van het type `ApplePieRecipe` om de tekst uit te kunnen printen in de `Main` klasse
+- minimaal 1 object van het type `ApplePieRecipe` om de tekst uit te kunnen printen in de `scr.Main` klasse
 
 
 ## Stappenplan
@@ -66,7 +66,7 @@ Let op: het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo go
 
 1. Maak een nieuw project aan in IntelliJ.
 
-2. Maak een nieuwe klasse aan genaamd  'Main'. Doe dit door met de rechter muisknop op de map 'SRC' te klikken, vervolgens klik je op 'New' en dan op 'Java class'. 
+2. Maak een nieuwe klasse aan genaamd  'scr.Main'. Doe dit door met de rechter muisknop op de map 'SRC' te klikken, vervolgens klik je op 'New' en dan op 'Java class'. 
 
 3. Maak een `public static void main` methode aan.
 
@@ -82,17 +82,17 @@ Let op: het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo go
 
 9. Maar dat is eigenlijk niet zo handig om een methode stap1 te noemen. Want wat doet deze methode? Weet ik dat over 2 jaar nog? Nee, hernoem daarom de methodes op een manier dat de naam wat zegt over wat de methode doet. 
 
-10. Maar hoe kunnen we nu deze aanspreken van uit de `Main` klasse? Ja, precies door een object aan te maken van het type `ApplePieRecipe`
+10. Maar hoe kunnen we nu deze aanspreken van uit de `scr.Main` klasse? Ja, precies door een object aan te maken van het type `ApplePieRecipe`
 
-11. Roep hiermee van uit de `Main` klasse alle methodes aan  `ApplePieRecipe`, zodat als we de `public static void main` methode laten draaien we alle stappen geprint zien worden.
+11. Roep hiermee van uit de `scr.Main` klasse alle methodes aan  `ApplePieRecipe`, zodat als we de `public static void main` methode laten draaien we alle stappen geprint zien worden.
 
 12. De oplettende student heeft gezien dat we helemaal niets doen met de objecten van `Ingredient`. En dat terwijl we daar zo veel moeite in hebben gestopt. Maar iemand die deze app draait zou ook wel willen weten welke ingredienten nodig zijn voor de recept. Maak daarom een `public void` methode genaamd printIngredients aan in `ApplePieRecipe`. Laat deze methode voor ieder object een `System.out.println("object.getAmount + " " + object.getUnit + " " + object.getName)` uitprinten. (Vervang natuurlijk object met de naam van het object dat je het gegeven bij het instantieren.)
 
-13. Roep ook deze aan vanuit de `Main` methode, zodat eerst de ingredienten een voor een worden geprint gevolgd door elke stap van het recept.
+13. Roep ook deze aan vanuit de `scr.Main` methode, zodat eerst de ingredienten een voor een worden geprint gevolgd door elke stap van het recept.
 
 14. Dit is een van de mogelijkheden en is op zich helemaal prima, maar neem ook een kijkje bij de extra opdrachten.
 
 ## Extra opdrachten
 
-1. Zou je ook een methode kunnen maken die alle stappen uitprint? Dan hoef je niet alle methode aan te roepen van uit de `Main` klasse. Ziet dat er niet een stuk netter uit?
+1. Zou je ook een methode kunnen maken die alle stappen uitprint? Dan hoef je niet alle methode aan te roepen van uit de `scr.Main` klasse. Ziet dat er niet een stuk netter uit?
 2. Zou je dit misschien met meer recepten kunenn doen? Probeer zelf een recept toe te voegen en op de zelfde manier uit te voeren als het appeltaart recept.
