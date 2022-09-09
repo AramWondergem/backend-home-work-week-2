@@ -78,14 +78,14 @@ public class ApplePieRecipe {
        switch (Main.askingQuestion(question1)){
            case 1:
 
-               for (int i=1; i<recipeSteps.size();i++) {
+               for (int i=1; i<=recipeSteps.size();i++) {
                    System.out.println(i + "." + recipeSteps.get(i));
                    Main.askingQuestion(question2);
                }
                break;
 
            case 2:
-               for (int i=1; i<recipeSteps.size();i++) {
+               for (int i=1; i<=recipeSteps.size();i++) {
                    System.out.println(i + "." + recipeSteps.get(i));
                }
                break;

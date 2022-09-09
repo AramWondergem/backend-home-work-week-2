@@ -27,7 +27,7 @@ public class FileManager {
                 break;
             case 2:
                 try {
-                    File groceriesList = new File("C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\groceriesList");
+                    File groceriesList = new File("C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\groceriesList.txt");
                     FileWriter pen = new FileWriter(groceriesList);
                     BufferedWriter printer = new BufferedWriter(pen);
                     printer.write("---Boodschappenlijst----");
@@ -38,7 +38,7 @@ public class FileManager {
                     printer.newLine();
                     }
                     printer.close();
-                    System.out.println("Het bestandje is hier opgeslagen: C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\groceriesList");
+                    System.out.println("Het bestandje is hier opgeslagen: C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\groceriesList.txt");
                 }
                 catch (IOException e){
                     System.out.println("het programma heeft geen toegang tot de locatie waar het bestand wordt opgeslagen");
@@ -46,18 +46,18 @@ public class FileManager {
                 break;
             case 3:
                 try {
-                    File recipe = new File("C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipe");
+                    File recipe = new File("C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipe.txt");
                     FileWriter pen = new FileWriter(recipe);
                     BufferedWriter printer = new BufferedWriter(pen);
                     printer.write("---Recept---");
                     printer.newLine();
 
-                    for (int i=1; i<userRecipe.getRecipeSteps().size();i++) {
+                    for (int i=1; i<=userRecipe.getRecipeSteps().size();i++) {
                         printer.write(i + "." + userRecipe.getRecipeSteps().get(i));
                         printer.newLine();
                     }
                     printer.close();
-                    System.out.println("Het bestandje is hier opgeslagen: C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipe");
+                    System.out.println("Het bestandje is hier opgeslagen: C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipe.txt");
                 }
                 catch (IOException e){
                     System.out.println("het programma heeft geen toegang tot de locatie waar het bestand wordt opgeslagen");
@@ -65,7 +65,7 @@ public class FileManager {
                 break;
             case 4:
                 try {
-                    File recipeAndGrociesList = new File("C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipeAndGroceriesList");
+                    File recipeAndGrociesList = new File("C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipeAndGroceriesList.txt");
                     FileWriter pen = new FileWriter(recipeAndGrociesList);
                     BufferedWriter printer = new BufferedWriter(pen);
 
@@ -81,12 +81,12 @@ public class FileManager {
                     printer.write("---Recept---");
                     printer.newLine();
 
-                    for (int i=1; i<userRecipe.getRecipeSteps().size();i++) {
+                    for (int i=1; i<=userRecipe.getRecipeSteps().size();i++) {
                         printer.write(i + "." + userRecipe.getRecipeSteps().get(i));
                         printer.newLine();
                     }
                     printer.close();
-                    System.out.println("Het bestandje is hier opgeslagen: C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipeAndGroceriesList");
+                    System.out.println("Het bestandje is hier opgeslagen: C:\\Users\\aramw\\Documents\\novi\\backend\\les3\\recipeAndGroceriesList.txt");
                 }
                 catch (IOException e){
                     System.out.println("het programma heeft geen toegang tot de locatie waar het bestand wordt opgeslagen");
