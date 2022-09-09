@@ -45,6 +45,22 @@ public class Main {
         }
         while (askingQuestion(questionContinue)==1);
 
+        FileManager fileManager = new FileManager(userRecipe);
+        fileManager.saveToFile();
+
+        System.out.println("Doei");
+        String[] a = new String[5];
+
+        a[0]=" ||||||| ";
+        a[1]="[| o o |]";
+        a[2]=" |  ^  | ";
+        a[3]=" | '-' |";
+        a[4]=" +-----+";
+
+        for (int i=0;i<5;i++) {
+            System.out.println(a[i]);
+        }
+
         }
 
         public static int askingQuestion (ArrayList < String > questionAndAnswers) {

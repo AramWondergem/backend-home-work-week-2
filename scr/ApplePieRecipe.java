@@ -90,10 +90,18 @@ public class ApplePieRecipe {
                }
                break;
 
-
        }
     }
 
+    public ArrayList<Ingredient> getApplePieIngredients() {
+        return applePieIngredients;
+    }
 
+    public HashMap<Integer, String> getRecipeSteps() {
+        return recipeSteps;
+    }
 
+    public int getNumberOfPies() {
+        return numberOfPies;
+    }
 }
